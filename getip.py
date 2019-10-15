@@ -43,6 +43,6 @@ def getifip():
 	return ipAddr
 
 
-print getifip()	
+print(getifip())
 
 #print("The ip of the current system is: " + getifip("eth0"))

@@ -20,7 +20,7 @@ def getHostsOnTheSameNetwork():
 	# SSH running there). 
 	portScanner.scan('192.168.1.0/24', arguments='-p 22 --open')
 		
-	# Scan the network for hoss
+	# Scan the network for hosts
 	hostInfo = portScanner.all_hosts()	
 	
 	# The list of hosts that are up.
