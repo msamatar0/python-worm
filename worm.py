@@ -26,7 +26,8 @@ def isInfectedSystem():
 	# infected.txt in directory /tmp (which
 	# you created when you marked the system
 	# as infected). 
-	pass
+	return os.path.exists('/tmp/infected.txt')
+	#pass
 
 #################################################################
 # Marks the system as infected
@@ -36,7 +37,9 @@ def markInfected():
 	# Mark the system as infected. One way to do
 	# this is to create a file called infected.txt
 	# in directory /tmp/
-	pass	
+	inf = open('/tmp/infected.txt', 'x')
+	inf.write('yes')
+	#pass	
 
 ###############################################################
 # Spread to the other system and execute
@@ -119,14 +122,14 @@ def attackSystem(host):
 		# TODO: here you will need to
 		# call the tryCredentials function
 		# to try to connect to the
-		# remote system using the above 
+		# remote system using the above
 		# credentials.  If tryCredentials
 		# returns 0 then we know we have
 		# successfully compromised the
 		# victim. In this case we will
 		# return a tuple containing an
 		# instance of the SSH connection
-		# to the remote system. 
+		# to the remote system.
 		pass	
 			
 	# Could not find working credentials
