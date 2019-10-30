@@ -74,7 +74,7 @@ def tryCredentials(host, userName, password, sshClient):
 # If the attack failed, returns a NULL
 ###############################################################
 def attackSystem(host):
-	
+	#
 	# The credential list
 	global credList
 	
